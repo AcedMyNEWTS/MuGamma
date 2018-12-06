@@ -6,6 +6,8 @@ html {
   min-height: 100%;
 }
 
+
+
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +26,8 @@ h3,h4,h5,h6 {
   color: #FF8AB4;
 }
 
+
+
 p {
   font-family:'Open Sans Light', sans-serif;
   font-weight: bold200;
@@ -36,16 +40,20 @@ p {
 a {
   color: #FEB0CC;
 }
+
 a:link, a:visited {
   text-decoration: none;
   color: #FEB0CC;
 }
+
+
+a:active,
 a:hover {
-  text-decoration: none;
+  outline: 0;
+  color: #feb0cc;
+
 }
-a:active {
-  text-decoration: none;
-}
+
 
 .hovereffect {
 width:100%;
@@ -139,12 +147,30 @@ transition-delay:.2s;
 
 .btn {
   color: #fff;
+  transition: #feb0cc;
+}
+
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none !important;
+    background-color: #feb0cc !important;
+    color: #fff !important;
+    box-shadow: none !important;;
+    background-image: none;
+    border: 0px solid;
 }
 
 .btn-outline-primary {
 border-color: #feb0cc;
-color: #fff;
+
 }
+
+.btn-outline-primary:active {
+  background-color: #FEB0CC;
+  border-color: #fff;
+  background-image: none;
+}
+
 
 .btn-outline-primary:hover {
 background-color: #FEB0CC;
@@ -156,23 +182,96 @@ border-color: #fff;
 }
 
 .btn-primary {
-  background-color: #feb0cc;
+  background-color: #feb0cc !important;
+  color: #fff !important;
   border-color: #feb0cc;
 }
 
-.btn-primary:hover {
-  background-color: #feb0cc;
-  opacity: 0.75;
-  border-color: #feb0cc;
+.btn-primary:active {
+  background-image: none;
 }
+
+.btn-primary:hover {
+background-color: #FEB0CC;
+border-color: #fff;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: #feb0cc;
+}
+
+
+
+/* custom buttons
+.btn-custom {
+  background-color: #FEB0CC;
+  border-color: #FEB0CC;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #fe97bc;
+  border-color: #fd7eab;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #FEB0CC;
+  border-color: #FEB0CC;
+}
+*/
+
 
 /* footer content */
 .footer {
   color: #89BD6F;
-  position: absolute;
+  font-size: .75rem;
+  position: relative;
   bottom: 0;
   width: 100%;
-  height: 50px; /* Set the fixed height of the footer here */
-  line-height: 50px; /* Vertically center the text there */
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
   background-color: #CFEFB0;
+}
+
+
+/* Responsive breakpoints */
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+.shrink {
+  transition: 1s ease;
+
+}
+
+
+.shrink:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+
 }

@@ -12,13 +12,15 @@
 
     <!-- Personal CSS -->
   <link rel="stylesheet"
-  href="https://acedmynewts.github.io/MuGamma/custome.css"/>
+  href="/Users/chanellshorter/Documents/GitHub/Sites/MuGamma/custome.css"/>
 
 
   <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
   </head>
@@ -31,14 +33,48 @@
             <img src="http://acedmynewts.github.io/MuGamma/images/aka-logo2.png" width="40" height="40" class="d-inline-block align-top" alt="AKA logo">
         </a>
          <form class="form-inline">
-             <button class="btn btn-sm btn-outline-primary mr-2" type="button">Home</button>
-          <button class="btn btn-sm btn-outline-primary mr-2" type="button">Our History</button>
-          <button class="btn btn-sm btn-outline-primary mr-2" type="button">Our Sisterhood</button>
-          <button class="btn btn-sm btn-outline-primary mr-2" type="button">Programs</button>
-          <button class="btn btn-sm btn-outline-primary mr-2" type="button">Contact Us</button>
-          <button class="btn btn-sm btn-outline-primary mr-2" type="button">Donate</button>
+
+             <a href="/Users/chanellshorter/Documents/GitHub/Sites/MuGamma/index.html"><button class="btn btn-sm btn-outline-primary mr-2" type="button">Home</button></a>
+            <a href="/Users/chanellshorter/Documents/GitHub/Sites/MuGamma/history.html"><button class="btn btn-sm btn-outline-primary mr-2" type="button">Our History</button></a>
+            <a href="/Users/chanellshorter/Documents/GitHub/Sites/MuGamma/sisterhood.html"><button class="btn btn-sm btn-outline-primary mr-2" type="button">Our Sisterhood</button></a>
+            <a href="/Users/chanellshorter/Documents/GitHub/Sites/MuGamma/programs.html"><button class="btn btn-sm btn-outline-primary mr-2" type="button">Programs</button></a>
+          <button class="btn btn-sm btn-outline-primary mr-2" type="button" data-toggle="modal" data-target="#ContactModal">Contact Us</button>
+          <a href="https://paypal.me/chanellshorter" target="_blank"><button class="btn btn-sm btn-outline-primary mr-2" type="button">Donate</button></a>
       </form>
     </nav>
+
+<!--Modal Contact -->
+
+<div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="ContactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ContactModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--End Modal Content-->
 
 
 <!--Body Content-->
@@ -121,22 +157,28 @@
 
   <!-- Footer test-->
 <footer class="footer">
-       <div class="container media-body">
-         <a class="align-self-center mr-3" href="http://acedmynewts.github.io/MuGamma/index.html">
-           <img src="http://acedmynewts.github.io/MuGamma/images/aka-logo2.png" width="40" height="40" class="d-inline-block" alt="AKA logo">
-       </a>
-         <span class=" mr-10" sytle="font-color: blue">&copy; 2018 Chanell Shorter. All Rights Reserved.</span>
+       <div class="container">
 
-              <div class ="float-right">
-                      <a href="#" target="_blank"><img src="http://acedmynewts.github.io/MuGamma/images/instagram.svg" width="20" height="20" class="align-middle mr-2" alt="instagram">
-                    </a>
-                    <a href="#" target="_blank"><img src="http://acedmynewts.github.io/MuGamma/images/twitter.svg" width="20" height="20" class="align-middle mr-2" alt="instagram">
-                  </a>
-                  <a href="#" target="_blank"><img src="http://acedmynewts.github.io/MuGamma/images/facebook.svg" width="20" height="20" class="align-middle mr-2" alt="instagram">
-                </a>
-            </div>
+    <div class="row">
+      <div class="col">
+          <a class="align-self-center mr-3" href="http://acedmynewts.github.io/MuGamma/index.html">
+          <img src="http://acedmynewts.github.io/MuGamma/images/aka-logo2.png" width="40" height="40" class="d-inline-block" alt="AKA logo">
+          </a>
+        <span>&copy; 2018 Chanell Shorter. All Rights Reserved.</span>
+      </div>
+    </div>
+    <div class="row justify-content-center">
 
-       </div>
+        <a href="#" target="_blank"><img src="http://acedmynewts.github.io/MuGamma/images/instagram.svg" width="15" height="15" class="align-middle mr-1" alt="instagram">
+        </a>
+        <a href="#" target="_blank"><img src="http://acedmynewts.github.io/MuGamma/images/twitter.svg" width="15" height="15" class="align-middle mr-1" alt="twitter">
+        </a>
+        <a href="https://www.facebook.com/groups/170174149717914/?ref=br_rs" target="_blank"><img src="http://acedmynewts.github.io/MuGamma/images/facebook.svg" width="15" height="15" class="align-middle mr-1" alt="facebook">
+        </a>
+
+</div>
+
+</div>
  </footer>
 
 
